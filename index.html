@@ -4,49 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Quatro's Index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Wellfleet&display=swap" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css"> 
 </head>
 <body>
     <h1 class="visually-hidden">Welcome to Quatro's Website</h1>
-    <header class="grid-con center-grid-con">
-        <nav id="header-nav" class="col-span-full m-col-start-5 m-col-end-11">
+    <header class="full-width-grid-con" id="main-header-con">
+        <nav id="header-nav" class="col-start-1 col-end-1 m-col-start-4 m-col-end-11 l-col-start-4 l-col-end-10">
             <h2 class="visually-hidden">Main Navigation</h2>
             <button id="button"></button>
-            <div id="burger-con">
-                <ul>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
         </nav>
+        <div id="logo-con" class="col-start-2 col-end-4 m-col-start-1 m-col-end-3 l-col-start-1 l-col-end-2">
+            <h2 id="logo">QUATRO</h2>
+        </div>
+        <div id="search" class="col-start-4 col-end-5 m-col-start-11 m-col-end-12 l-col-start-11 l-col-end-12">
+            <button id="searchbttn"></button>
+        </div>
     </header>
 
 
     <div class="full-width-grid-con" id="hero-con">
-       <img
-        sizes="(max-width: 1200px) 100vw, 1200px"
-        srcset="
-        images/hero-img-full_ptsxti_c_scale,w_768.png 768w,
-        images/hero-img-full_ptsxti_c_scale,w_886.png 886w,
-        images/hero-img-full_ptsxti_c_scale,w_993.png 993w,
-        images/hero-img-full_ptsxti_c_scale,w_1091.png 1091w,
-        images/hero-img-full_ptsxti_c_scale,w_1187.png 1187w,
-        images/hero-img-full_ptsxti_c_scale,w_1200.png 1200w"
-        src="images/hero-img-full_ptsxti_c_scale,w_1200.png"
-        alt="3 Drinks on the Poolside" id="hero-img">
+    <img
+    sizes="(max-width: 2322px) 100vw, 2322px"
+    srcset="
+    images/hero-img-full_iqjujw_c_scale,w_190.png 190w,
+    images/hero-img-full_iqjujw_c_scale,w_632.png 632w,
+    images/hero-img-full_iqjujw_c_scale,w_896.png 896w,
+    images/hero-img-full_iqjujw_c_scale,w_1112.png 1112w,
+    images/hero-img-full_iqjujw_c_scale,w_1281.png 1281w,
+    images/hero-img-full_iqjujw_c_scale,w_1437.png 1437w,
+    images/hero-img-full_iqjujw_c_scale,w_1573.png 1573w,
+    images/hero-img-full_iqjujw_c_scale,w_1947.png 1947w"
+    src="images/hero-img-full_iqjujw_c_scale,w_1947.png"
+    alt="3 Poolside Drinks" id="hero-img">
         <div class="grid-con">
-          <div id="hero-heading-con" class="col-span-full m-col-start-2 m-col-end-7 l-col-start-1 l-col-end-7">
+          <div id="hero-heading-con" class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-6">
             <h2>Making Healthy Delicious</h2>
           </div>  
-          <div class="m-col-start-9 m-col-end-11 l-col-start-9 l-col-end-11" id="hero-heading-products">
-            <h3><a href="#">View Our Products</a></h3>
+          <section id="hero-subheadings">             
+             <div class="m-col-start-8 m-col-end-12 l-col-start-9 l-col-end-12" id="hero-heading-products">
+            <h3 class="hide"><a href="#">View Our Products</a></h3>
           </div>
-             <div class="m-col-start-9 m-col-end-11 l-col-start-9 l-col-end-11" id="hero-heading-sustainability">
-            <h3><a href="#">Our Sustainability Plan</a></h3>
+             <div class="m-col-start-8 m-col-end-12 l-col-start-9 l-col-end-12" id="hero-heading-sustainability">
+            <h3 class="hide"><a href="#">Our Sustainability Plan</a></h3>
           </div>
+        </section>
         </div>
     </div>
     <script src="js/main.js"></script>

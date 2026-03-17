@@ -15,16 +15,96 @@
    border-radius: 10px;
 } 
 
+body {
+   font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+p {
+   font-size: 15px;
+   padding: 0;
+   margin: 0;
+}
+
+h2 {
+   font-size: 28px;
+   padding: 0;
+   margin: 0
+}
+
+a {
+   text-decoration: none;
+   transition: .7s all ease-in-out;
+}
+
+ul li {
+   list-style: none;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+.hide {
+   display: none;
+}
+
+
+#logo {
+   color: white;
+   font-family: "Wellfleet", Arial, Helvetica, sans-serif;
+   font-size: 40px;
+   margin-top: 28px;
+   margin-bottom: 20px;
+   display: flex;
+   justify-content: center;
+}
+
    /* 2. Header Nav */
+
+   #main-header-con {
+      background-color: #CC3333;
+   }
+
+   #main-header-con ul li a {
+      color: white;
+   }
+
+   #header-nav button {
+    background: url(../images/burger.svg) center no-repeat;
+    filter:grayscale(100%);
+    border: 0px;
+	 width: 48px;
+	 height: 38px;
+	 transition: all .7s ease;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+#search button {
+   background: url(../images/search.svg) center no-repeat;
+   filter: grayscale(100%);
+   border: 0px;
+   width: 88px;
+   height: 48px;
+   transition: all .7s ease-in-out;
+   margin-top: 28px;
+   margin-bottom: 20px;
+   margin-left: 30px;
+   padding: 0;
+}
+
 
    /* 3. Hero Img */
    #hero-img {
-   height: 100%;
    grid-column: 1/-1;
    grid-row: 1/1;
    justify-self: center;
    object-fit: cover;
    object-position: center;
+   max-height: 70vh;
+   width: 100%;
    }
 
    #hero-con .grid-con {
@@ -32,14 +112,86 @@
    grid-row:1/1;	
    }
 
+   #hero-heading-con h2 {
+      justify-self: center;
+      margin-top: 57px;
+      background-color: #CC3333;
+      color: white;
+      padding: 25px;
+      border-radius: 19px;
+      display: flex;
+      flex-shrink: 0;
+      width: 425px;
+   }
+
    /* 4. Footer Nav */
 
    /* 5. Tablet Queries */
    @media screen and (min-width: 768px) {
+
+      #main-header-con ul li a:hover {
+      color: white;
+      cursor: pointer;
+   }
+
+   #header-nav button {
+      display: none;
+   }
+
+   .hide {
+      display: inline;
+   }
+
+      #search {
+      margin-left: 20px;
+   }
+
+   #logo {
+      margin-left: 30px;
+      display: block;
+   }
+
+   #hero-subheadings{
+      display: block;
+      width: max-content;
+      align-content: space-between;
+      margin-top: 400px;
+   }
+
+   #hero-subheadings a {
+      color: white;
+   }
+
+   #hero-heading-products {
+      background-color: #F26822;
+      padding: 25px 25px 25px 25px;
+      border-radius: 19px;
+      text-align: center;
+      margin-bottom: 25px;
+   }
+
+   #hero-heading-sustainability {
+      background-color: #03592F;
+      padding: 25px 25px 25px 25px;
+      border-radius: 19px;
+   }
+
+
+
    }
 
    /* 6. Desktop Queries */
 
    @media screen and (min-width: 1200px) {
+
+         #search {
+      margin-left: 20px;
+   }
+
+   #hero-subheadings {
+      margin-top: 400px;
+      margin-left: 270px;
+   }
+
 
    }
